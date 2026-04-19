@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at top, #0a0f1f, #02040a);
+  font-family: 'Segoe UI', sans-serif;
+  color: #e6f1ff;
+}
+
+
+.app {
+  text-align: center;
+  padding: 30px;
+}
+
+
+h1 {
+  font-size: 4.5rem;
+  margin-bottom: 50px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00d4ff, 0 0 20px #6c63ff;
+}
+
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 70%;
+  margin: 20px auto;
+  border: 1px solid #00d4ff55;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+
+.card {
+  padding: 18px;
+  text-align: center;
+  border-right: 1px solid #00d4ff33;
+}
+
+.card:last-child {
+  border-right: none;
+}
+
+.card h3 {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+
+.pass-card {
+  color: #00ffb3;
+}
+
+.fail-card {
+  color: #ff4d6d;
+}
+
+
+.form input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid #00d4ff55;
+  background: rgba(255,255,255,0.05);
+  color: #ffffff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px #6c63ff;
+}
+
+.form input::placeholder {
+  color: #a0cfff;
+}
+
+
+button {
+  padding: 9px 16px;
+  background: linear-gradient(45deg, #00d4ff, #6c63ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #6c63ff;
+}
+
+table {
+  margin: 20px auto;
+  width: 75%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th {
+  background: linear-gradient(45deg, #00d4ff22, #6c63ff22);
+  color: #00d4ff;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #1a2a40;
+}
+
+
+.pass {
+  color: #00ffb3;
+  font-weight: bold;
+}
+
+.fail {
+  color: #ff4d6d;
+  font-weight: bold;
+}
+
+
+tr:hover {
+  background: rgba(108, 99, 255, 0.1);
+}
